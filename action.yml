@@ -250,4 +250,4 @@ runs:
       with:
         files: |
           */bin/*
-      token: ${{inputs.action-gh-release-token}}
+        token: ${{inputs.action-gh-release-token}}
