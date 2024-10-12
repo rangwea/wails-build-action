@@ -95,6 +95,10 @@ inputs:
     description: "Windows Signing Certificate Password"
     required: false
     default: ''
+  action-gh-release-token:
+    description: "action-gh-release-token github token"
+    required: false
+    default: ''
 
 runs:
   using: "composite"
@@ -246,3 +250,4 @@ runs:
       with:
         files: |
           */bin/*
+      token: ${{inputs.action-gh-release-token}}
